@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/pizza_img"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/pizza1"/>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/pizza_img"
+        android:layout_marginTop="10dp"
+        android:text="Ветчина и грибы"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_description"
+        android:layout_marginLeft="10dp"
+        android:text="Ветчина, шампиньоны, увеличенная порция Моцареллы, томатный соус"
+        android:textSize="20sp"
+        android:layout_below="@+id/txt_title"
+        android:layout_toRightOf="@+id/pizza_img"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_price"
+        android:text="от 345 руб"
+        android:background="@drawable/rounded_button"
+        android:textColor="#E91E63"
+        android:layout_below="@+id/txt_description"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
